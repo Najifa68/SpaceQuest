@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 4908997395428747105}
   - component: {fileID: 4040689587523523518}
   - component: {fileID: 3569981097408583067}
+  - component: {fileID: -6704186233567607824}
   m_Layer: 11
   m_Name: Boss1
-  m_TagString: Boss
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,9 +78,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2006439231
-  m_SortingLayer: 2
-  m_SortingOrder: 2
+  m_SortingLayerID: -88612479
+  m_SortingLayer: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: -5912800498141821623, guid: c373a66a33990a442b873a25bd0e0382, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -103,6 +104,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f0b8200ba742e40b344d1410c4a6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lives: 0
+  maxLives: 100
+  damage: 20
+  experienceToGive: 20
 --- !u!95 &4908997395428747105
 Animator:
   serializedVersion: 7
@@ -188,3 +193,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-6704186233567607824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982552586886012180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9acc78f09acf146afad5906b762c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
